@@ -35,10 +35,10 @@ def countNumsInAlph(cipher):
 
 def countIC(cipher):
     ic = countNumsInAlph(cipher)
-    sum = 0
+    suma = 0
     for key in ic.keys():
         help = ic[key] * (ic[key] - 1)
-        sum += help
+        suma += help
 
     IK = sum / (len(cipher) * (len(cipher) - 1))
     return IK
